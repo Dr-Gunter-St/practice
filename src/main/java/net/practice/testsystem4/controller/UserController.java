@@ -2,6 +2,7 @@ package net.practice.testsystem4.controller;
 
 import net.practice.testsystem4.model.User;
 import net.practice.testsystem4.service.SecurityService;
+import net.practice.testsystem4.service.SecurityServiceImpl;
 import net.practice.testsystem4.service.UserService;
 import net.practice.testsystem4.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;

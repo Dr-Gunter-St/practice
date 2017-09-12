@@ -12,6 +12,10 @@
 
     <import resource="appconfig-security.xml"/>
 
+    <bean name="SecurityService" class="net.practice.testsystem4.service.SecurityServiceImpl"/>
+
+    <bean name="UserValidator" class="net.practice.testsystem4.validator.UserValidator"/>
+
     <context:component-scan base-package="net.practice.testsystem4"/>
 
     <context:property-placeholder location="classpath:database.properties"/>
