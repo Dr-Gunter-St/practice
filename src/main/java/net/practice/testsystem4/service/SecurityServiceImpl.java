@@ -11,8 +11,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 public class SecurityServiceImpl implements SecurityService {
 
-    private static final Logger logger = LoggerFactory.getLogger(SecurityServiceImpl.class);
-
     @Autowired
     private AuthenticationManager authenticationManager;
 
@@ -38,7 +36,6 @@ public class SecurityServiceImpl implements SecurityService {
         authenticationManager.authenticate(authenticationToken);
         if (authenticationToken.isAuthenticated()){
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
-            logger.debug(String.format("Successfully %s autologged in.", username));
         }
     }
 }
